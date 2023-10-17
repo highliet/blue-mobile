@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>BlueOS</title>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+ <link rel="stylesheet" href="./assets/style.css" />
+ <link rel="stylesheet" href="./assets/app.css" />
+ <link rel="stylesheet" href="./assets/fa/font-awesome.min.css" />
+</head>
+<body>
+ <div class="screen" id="lock">
+  <div class="statusbar">
+   <icon class="fa fa-plane"></icon>&nbsp;
+   <icon class="fa fa-battery" data-btel="icon"></icon>
+   <span data-btel="value">100%</span>
+  </div>
+  <time class="widget">
+   <span id="time">00:00</span>
+   <span id="date">Sat, 01 Jan 2022</span>
+  </time>
+  <footer>
+   <span class="ui-pull-left">Unlock</span>
+  </footer>
+ </div>
+ <div class="screen app" id="lockarea">
+  <header>Enter Password</header>
+  <main class="ui-center">
+   <div id="lockdetail">
+    <span class="ui-pull-left">123</span>
+    <span class="ui-pull-right" id="pincounter">6</span>
+   </div>
+   <input type="number" id="pinbox" autofocus />
+   <br />
+   <span id="lockicon">
+    <icon class="fa fa-key"></icon>
+   </span>
+  </main>
+  <footer>
+   <span class="ui-pull-left ui-hidden" id="unlocker">OK</span>
+   <span class="ui-pull-right" id="ib1">Back</span>
+  </footer>
+ </div>
+ <div class="screen" id="home">
+  <div class="statusbar">
+   <icon class="fa fa-plane"></icon>&nbsp;
+   <icon class="fa fa-battery" data-btel="icon"></icon>
+   <span data-btel="value">100%</span>
+  </div>
+  <time class="widget">
+   <span id="time">00:00</span>
+   <span id="date">Sat, 01 Jan 2022</span>
+  </time>
+  <div class="ui-center" style="margin-top:7px">
+   <u style="font-size:13px">Airplane mode</u>
+  </div>
+  <footer>
+   <span class="ui-pull-left">Apps</span>
+   <span class="ui-pull-right">Notifications</span>
+  </footer>
+ </div>
+ <div class="screen app" id="notifications">
+  <header>Notifications</header>
+  <main class="ui-center">
+   <p>No new notifications. </p>
+  </main>
+  <footer>
+   <span class="ui-pull-right">Back</span>
+  </footer>
+ </div>
+ <div class="screen app" id="appmenu">
+  <header>Apps</header>
+  <main></main>
+  <footer>
+   <span class="ui-pull-left">Options</span>
+   <span>Open</span>
+   <span class="ui-pull-right">Back</span>
+  </footer>
+ </div>
+ <div class="screen app" id="dialer">
+  <div class="statusbar">
+   <icon class="fa fa-plane"></icon>&nbsp;
+   <icon class="fa fa-battery" data-btel="icon"></icon>
+   <span data-btel="value">100%</span>
+  </div>
+  <main class="ui-center">
+   <input type="tel" id="phonebox" />
+  </main>
+  <footer>
+   <span class="ui-pull-left">Call</span>
+   <span class="ui-pull-right" id="ib2">Back</span>
+  </footer>
+ </div>
+ <div class="dialog" id="notify"></div>
+ <script src="./assets/definition.js"></script>
+ <script src="./assets/systemApp.js"></script>
+ <script src="./assets/script.js"></script>
+</body>
+</html>
