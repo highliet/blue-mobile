@@ -103,7 +103,7 @@ createApp('music', `
  </style>
  <header>Music Player</header>
  <main>
-  <audio id="music" src="./files/Tobu-Candyland.gif" type="audio/mpeg"></audio>
+  <audio id="music" src="./files/Tobu-Candyland.mp3" type="audio/mpeg"></audio>
   <div class="ui-clearfix">
    <img src="./files/Tobu-Candyland.jpg" id="icon" />
    <aside>
