@@ -31,11 +31,15 @@ html, body {
 
 #mobile layer { opacity: 0; }
 #mobile button {
- opacity: 0;
  width: 51px;
  height: 31px;
+ border: 0;
+ background-color: transparent;
  overflow: hidden;
- border: 3px solid #c3c3c3;
+}
+
+#mobile button:focus {
+ outline: 3px solid #c3c3c3;
 }
 
 #mobile button.func {
